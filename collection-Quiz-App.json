@@ -1,0 +1,160 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Quiz-App",
+    "collectionId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+    "dateExported": "2024-10-12T19:37:38.772Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "71f53376-000c-4189-a1ef-392a1d33e31b",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-10-12T08:27:06.078Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "16059a33-6695-4ab4-bf7a-965cfac759b8",
+            "name": "quiz",
+            "containerId": "",
+            "created": "2024-10-12T08:27:24.741Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fe93cd61-3605-4862-80d9-673a20a589e0",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "71f53376-000c-4189-a1ef-392a1d33e31b",
+            "name": "loginUser",
+            "url": "http://localhost:8000/api/users/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-12T08:27:38.145Z",
+            "modified": "2024-10-12T14:04:01.117Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"uv@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5260fcb2-143e-4c16-af2c-bd31fcc60a21",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "71f53376-000c-4189-a1ef-392a1d33e31b",
+            "name": "registerUser",
+            "url": "http://localhost:8000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-12T08:27:51.071Z",
+            "modified": "2024-10-12T14:03:21.177Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"uv\",\n  \"email\": \"uv@gmail.com\",\n  \"name\": \"UVAISH\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "10166656-b6ce-4f92-80e4-6e421c8bc1d6",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "16059a33-6695-4ab4-bf7a-965cfac759b8",
+            "name": "create",
+            "url": "http://localhost:8000/api/quiz/create",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-12T18:20:26.239Z",
+            "modified": "2024-10-12T18:46:04.316Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzBhODFhODI4Yjk4NDQzZjc5ODZlNTMiLCJlbWFpbCI6InV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXYiLCJuYW1lIjoiVVZBSVNIIiwiaWF0IjoxNzI4NzU3MTkwLCJleHAiOjE3Mjg3OTMxOTB9.RhFzzPXr3y73XcLTBFX9rZB8Wz_LetAOvyIA2DEjVTE"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"GK-2\",\n  \"questions\": [\n    {\n      \"questionText\": \"What is the capital of France?\",\n      \"options\": [\n        \"Berlin\",\n        \"Madrid\",\n        \"Paris\",\n        \"Rome\"\n      ],\n      \"correctAnswer\": 2\n    },\n    {\n      \"questionText\": \"Which planet is known as the Red Planet?\",\n      \"options\": [\n        \"Earth\",\n        \"Mars\",\n        \"Jupiter\",\n        \"Saturn\"\n      ],\n      \"correctAnswer\": 1\n    },\n    {\n      \"questionText\": \"Who wrote 'Hamlet'?\",\n      \"options\": [\n        \"Mark Twain\",\n        \"J.K. Rowling\",\n        \"William Shakespeare\",\n        \"Charles Dickens\"\n      ],\n      \"correctAnswer\": 2\n    },\n    {\n      \"questionText\": \"What is the boiling point of water?\",\n      \"options\": [\n        \"100°C\",\n        \"50°C\",\n        \"75°C\",\n        \"150°C\"\n      ],\n      \"correctAnswer\": 0\n    },\n    {\n      \"questionText\": \"Which is the largest ocean on Earth?\",\n      \"options\": [\n        \"Indian Ocean\",\n        \"Atlantic Ocean\",\n        \"Arctic Ocean\",\n        \"Pacific Ocean\"\n      ],\n      \"correctAnswer\": 3\n    }\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d5d2cabc-fec1-40fd-8d3f-d3baba6b6e47",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "16059a33-6695-4ab4-bf7a-965cfac759b8",
+            "name": "get-all",
+            "url": "http://localhost:8000/api/quiz/get-all",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-10-12T18:42:43.896Z",
+            "modified": "2024-10-12T18:48:05.644Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzBhODFhODI4Yjk4NDQzZjc5ODZlNTMiLCJlbWFpbCI6InV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXYiLCJuYW1lIjoiVVZBSVNIIiwiaWF0IjoxNzI4NzU3MTkwLCJleHAiOjE3Mjg3OTMxOTB9.RhFzzPXr3y73XcLTBFX9rZB8Wz_LetAOvyIA2DEjVTE"
+                }
+            ]
+        },
+        {
+            "_id": "b48a8f56-21df-4387-b3db-377929cb4ade",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "16059a33-6695-4ab4-bf7a-965cfac759b8",
+            "name": "get-details",
+            "url": "http://localhost:8000/api/quiz/670ac23f6ba40f840df530ba",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-10-12T18:51:25.867Z",
+            "modified": "2024-10-12T19:22:34.371Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzBhODFhODI4Yjk4NDQzZjc5ODZlNTMiLCJlbWFpbCI6InV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXYiLCJuYW1lIjoiVVZBSVNIIiwiaWF0IjoxNzI4NzU3MTkwLCJleHAiOjE3Mjg3OTMxOTB9.RhFzzPXr3y73XcLTBFX9rZB8Wz_LetAOvyIA2DEjVTE"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "49ca3abe-a8f7-4427-a505-14ec009620e5",
+            "colId": "e3ff8b75-825c-4209-a6a7-6fba802b25a2",
+            "containerId": "16059a33-6695-4ab4-bf7a-965cfac759b8",
+            "name": "submit",
+            "url": "http://localhost:8000/api/quiz/670ac23f6ba40f840df530ba/submit",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-10-12T19:23:05.873Z",
+            "modified": "2024-10-12T19:32:56.345Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzBhODFhODI4Yjk4NDQzZjc5ODZlNTMiLCJlbWFpbCI6InV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXYiLCJuYW1lIjoiVVZBSVNIIiwiaWF0IjoxNzI4NzU3MTkwLCJleHAiOjE3Mjg3OTMxOTB9.RhFzzPXr3y73XcLTBFX9rZB8Wz_LetAOvyIA2DEjVTE"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"answers\": [\n    0,\n    1,\n    2,\n    4,\n    3\n  ]\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "xHoWyslkNonOmrx4nfTh9ykZ6QyLTWtsbZ0sKEIp6hjjTxfv5L-eBwqZQCFCu5cpppnkG2blyX2PsjkDjlsPDw"
+}
