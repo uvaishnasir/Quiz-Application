@@ -5,10 +5,9 @@ const app = express();
 
 app.use(cors());
 
-app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello, World!" });
+app.get("/hello", (req, res) => {
+  res.send("Hello, World!");
 });
-
 
 //routes declaration
 
