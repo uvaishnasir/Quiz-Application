@@ -68,7 +68,7 @@ Follow these steps to set up the project locally:
    The server will be running on `http://localhost:8000`.
 
 ## API Endpoints
-( Note- You can import the collection named as `collection-Quiz-App.json` )
+(Note- You can import the collection named as `collection-Quiz-App.json`)
 
 ### 1. **User Authentication**
 
